@@ -11,7 +11,7 @@ const ConditionalApp = () => {
 
             <button className="btn-warning" onClick={() => setCondition(!condition)}> ON / OFF </button>
 
-            <h1> {condition ? 'Verdadero' : 'Apagado'} </h1>
+            <h1> {condition ? 'Encendido' : 'Apagado'} </h1>
             
         </div>
     )
