@@ -13,7 +13,6 @@ const ProductApp = () => {
     const [product, setProduct] = useState(StandardProduct);
     const [data, setData] = useState('');
     const [attribute, setAttribute ]  = useState('');
-    console.log('data.. ', data);
 
 
     const updateProduct = (property, value) => {

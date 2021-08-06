@@ -6,10 +6,14 @@ import ConditionalApp from './ConditionalApp';
 import ErrorApp from './ErrorApp';
 import ProductApp from './ProductApp';
 import ShoppingCart from './ShoppingCart';
+import LiveCircle from './LiveCircle';
+import FetchCard from './FetchCard';
 
 function App() {
 
 const [condition, setCondition] = useState(true);
+
+
 
   return (
 
@@ -17,7 +21,7 @@ const [condition, setCondition] = useState(true);
        <h1>Uso de UseState y UseEffect</h1>
       <button className="btn-warning" onClick={() => setCondition(!condition)}> UseState / UseEffect </button>
 
-      <div  className={condition ? 'd-none' : ''}>
+      <div className={condition ? '' : 'd-none'}>
       <h1>UseState usos</h1>
       <CounterApp/>
       <ConditionalApp/>
@@ -26,8 +30,10 @@ const [condition, setCondition] = useState(true);
       <ShoppingCart/>
       </div>
       
-      <div className={condition ? '' : 'd-none'}>
+      <div className={condition ? 'd-none' : ''}>
       <h1>UseEffect usos</h1>
+      {/* <LiveCircle/> */}
+      <FetchCard/>
       </div>
   </div>
 
