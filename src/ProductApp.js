@@ -4,7 +4,7 @@ import React  from 'react';
 const StandardProduct = {
     title: 'Title',
     description :'Description',
-    price: '0'
+    price: 'price'
 }
 
 
