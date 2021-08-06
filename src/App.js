@@ -8,12 +8,11 @@ import ProductApp from './ProductApp';
 import ShoppingCart from './ShoppingCart';
 import LiveCircle from './LiveCircle';
 import FetchCard from './FetchCard';
+import RezizeComponent from './ResizeComponent';
 
 function App() {
 
 const [condition, setCondition] = useState(true);
-
-
 
   return (
 
@@ -32,8 +31,12 @@ const [condition, setCondition] = useState(true);
       
       <div className={condition ? 'd-none' : ''}>
       <h1>UseEffect usos</h1>
-      {/* <LiveCircle/> */}
+      <LiveCircle/>
       <FetchCard/>
+
+      {!condition && // borramos el componente para practicar la funcion return de UseEffect
+            <RezizeComponent/>}
+
       </div>
   </div>
 
